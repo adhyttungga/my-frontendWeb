@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Adhytia Tungga</title>
+    <link rel="stylesheet" href="assets/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="http://code.jquery.com/jquery-3.3.1.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,700,900" rel="stylesheet">
+</head>
+<body>
+    <header class="site-header">
+        <div class="logo-name">
+            <img src="assets/images/logo-name.png" alt="Logo Name">
+        </div>
+
+        <nav>
+            <ul id="menu">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="#feature">FEATURE</a></li>
+                <li><a href="#latest-work">LATEST WORK</a></li>
+                <li><a href="#bio">BIO</a></li>
+            </ul>
+
+            <div id="toggle">
+                <div class="span" id="one"></div>
+                <div class="span" id="two"></div>
+                <div class="span" id="three"></div>
+            </div>
+        </nav>
+
+        <div id="resize">
+            <ul id="menu">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="#feature">FEATURE</a></li>
+                <li><a href="#latest-work">LATEST WORK</a></li>
+                <li><a href="#bio">BIO</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main class="site-main">
+        <div class="content">
+            <div class="jumbotron" id="home">
+                <p>NEED A DESIGN?</p>
+                <h1>HIRE US NOW</h1>
+            </div>
+
+            <div class="site-feature" id="feature">
+                <article>
+                    <img src="assets/images/icon-functionality.png" alt="Functionality" class="featured-image">
+                    <h2>Functionality</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur autem commodi dignissimos dolores ea, eaque,
+                        earum esse harum illo in incidunt molestias nam non qui recusandae sunt ullam veniam vero!</p>
+                </article>
+
+                <article>
+                    <img src="assets/images/icon-clientsupport.png" alt="Client Support" class="featured-image">
+                    <h2>Client Support</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur autem commodi dignissimos dolores ea, eaque,
+                        earum esse harum illo in incidunt molestias nam non qui recusandae sunt ullam veniam vero!</p>
+                </article>
+
+                <article>
+                    <img src="assets/images/icon-unique.png" alt="Unique Design" class="featured-image">
+                    <h2>Unique Design</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur autem commodi dignissimos dolores ea, eaque,
+                        earum esse harum illo in incidunt molestias nam non qui recusandae sunt ullam veniam vero!</p>
+                </article>
+            </div>
+
+            <div class="site-late-work" id="latest-work">
+                <h2 style="margin: 0 0 0 4em;padding-top: 10px;">LATEST WORK</h2>
+                <div>
+                    <div class="flex-column">
+                        <a href="">
+                            <img src="assets/images/latest-work1.webp" alt="latest work no. 1">
+                        </a>
+                        <a href="">
+                            <img src="assets/images/latest-work2.webp" alt="latest work no. 2">
+                        </a>
+                        <a href="">
+                            <img src="assets/images/latest-work3.webp" alt="latest work no. 3">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <aside>
+            <article class="profile" id="bio">
+                <header style="margin-top: auto;margin-bottom:auto;">
+                    <figure style="margin-top: auto;margin-bottom: auto;">
+                        <img src="assets/images/profile-owl.jpg">
+                    </figure>
+                    <p id="profession" style="background-color: rgba(250, 108, 42, 0.885);width: 170px;margin: 0 auto 0 auto;padding: 10px;border-radius: 0 35px;">Frontend Developer</p>
+                    <h2 style="padding: 5px;margin: 0px;">Adhytia Tungga</h2>
+                    <p style="margin: 0;padding: 15px;font-size: .7em;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur autem commodi dignissimos dolores ea, eaque,
+                        earum esse harum illo in incidunt molestias nam non qui recusandae sunt ullam veniam vero!</p>
+                </header>
+            </article>
+        </aside>
+    </main>
+
+    <footer class="site-footer">
+        <div class="content">
+            <div class="copyright">Written & designed with 💛 and support from good friends.</div>
+            
+            <div class="link">
+                <h4>SOCIAL MEDIA</h4>
+                <a class="fb" target="_blank" href="https://www.facebook.com/"></a>
+                <a class="tt" target="_blank" href="https://www.twitter.com/"></a>
+                <a class="in" target="_blank" href="https://www.instagram.com/"></a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+    $("#toggle").click(function() {
+        $(this).toggleClass('on');
+        $("#resize").toggleClass("active");
+    });
+    </script>
+</body>
+</html>
